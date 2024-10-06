@@ -63,7 +63,7 @@ document.addEventListener('scroll', function() {
     }
 
     // Reveal the content section
-    if (scrollPos > window.innerHeight / 2) {
+    if (scrollPos > window.innerHeight / 5) {
         content.classList.add('hidden');
     } else {
         content.classList.remove('hidden');
