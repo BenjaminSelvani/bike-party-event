@@ -3,44 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Dinner Party</title>
+    <title>MealMingle - Social Dinner Party</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="container">
+    <!-- Main container for landing page -->
+    <div class="main-container">
+        <!-- Header with background image -->
+        <div class="header">
+            <div class="menu-button">
+                <button>Menu</button>
+            </div>
+        </div>
         
-        <!-- Hero Section with Image and Menu -->
-        <div class="hero">
-            <img src="hero-image.jpg" alt="Social Dinner Party" class="hero-image">
-            <button class="menu-btn">Menu</button>
-        </div>
+        <!-- Main content section -->
+        <div class="content">
+            <button class="organize-btn">Organise my Dinner Party</button>
 
-        <!-- Organize Dinner Party Button -->
-        <div class="cta-section">
-            <button class="cta-btn">Organise my Dinner Party</button>
-        </div>
-
-
-
-        <button onclick="navigateTo('create-event')" class="cta-btn">Organise my Dinner Party</button>
-
-
-
-        <!-- Information Section -->
-        <div class="info-section">
+            <!-- Section with video and options -->
             <div class="how-it-works">
                 <h2>How does it work?</h2>
-                <div class="video-placeholder">
-                    <button class="play-btn">&#9654;</button>
+                <div class="video-container">
+                    <button class="video-play-btn">▶</button>
                 </div>
-            </div>
-            
-            <div class="links-section">
-                <button class="link-btn">Join Existing Party</button>
-                <button class="link-btn">Pricing</button>
-                <button class="link-btn">FAQ</button>
-                <button class="link-btn">Admin Dashboard</button>
+
+                <div class="button-group">
+                    <button class="button" onclick="location.href='join-event.html'">Join Existing Party</button>
+                    <button class="button" onclick="location.href='pricing.html'">Pricing</button>
+                    <button class="button" onclick="location.href='#'">FAQ</button>
+                    <button class="button" onclick="location.href='admin-dashboard.html'">Admin Dashboard</button>
+                </div>
             </div>
         </div>
     </div>

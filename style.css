@@ -1,195 +1,178 @@
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
+/* General styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Container for the entire layout */
-.container {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
-/* Hero Section with Image and Menu Button */
-.hero {
-    position: relative;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-
-.menu-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #88C0D0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.menu-btn:hover {
-    background-color: #5E81AC;
-}
-
-/* CTA Section (Organise Dinner Party) */
-.cta-section {
-    margin: 20px 0;
-}
-
-.cta-btn {
-    background-color: #D08770;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.cta-btn:hover {
-    background-color: #B3583E;
-}
-
-/* Info Section */
-.info-section {
+.main-container {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #8FBCBB;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
-/* How it Works section */
-.how-it-works {
-    flex-basis: 45%;
-    background-color: #4C566A;
+/* Header Section with background image */
+.header {
+    width: 100%;
+    height: 60vh;
+    background: url('https://static.vecteezy.com/system/resources/previews/011/641/943/original/orange-abstract-background-modern-orange-background-used-for-business-corporate-institution-poster-template-party-festive-seminar-orange-dynamic-gradient-background-vector.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-button {
+    margin: 20px;
+}
+
+.menu-button button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-button button:hover {
+    background-color: #ff9900;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
+}
+
+/* Organize Button */
+.organize-btn {
+    margin-top: -30px;
+    padding: 15px 40px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.organize-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Content Section */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+/* How it works section */
+.how-it-works {
+    text-align: center;
+    margin-top: 40px;
 }
 
 .how-it-works h2 {
+    font-size: 2rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.video-placeholder {
-    background-color: #ECEFF4;
-    border-radius: 10px;
-    padding: 30px;
+.video-container {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    background-color: #ffebcc;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+    border-radius: 15px;
 }
 
-.play-btn {
-    background-color: #FFCC00;
+.video-play-btn {
+    font-size: 2.5rem;
+    color: #ff6600;
+    background: none;
     border: none;
-    font-size: 30px;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Links Section */
-.links-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.video-play-btn:hover {
+    color: #e65c00;
 }
 
-.link-btn {
-    background-color: #ECEFF4;
-    color: #2E3440;
+/* Button group for join, pricing, etc. */
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.button-group .button {
     padding: 15px;
-    margin: 10px;
+    background-color: #ff6600;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 30px;
     cursor: pointer;
-}
-
-.link-btn:hover {
-    background-color: #D8DEE9;
-}
-
-
-/* Create Event Page Styles */
-.create-event-container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fdf7f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="time"],
-textarea,
-input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 100px;
-}
-
-.create-event-btn {
-    background-color: #28a745;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2rem;
     width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease;
 }
 
-.create-event-btn:hover {
-    background-color: #218838;
+.button-group .button:hover {
+    background-color: #e65c00;
 }
 
-/* Back to Home Button */
-.back-btn {
-    background-color: #88C0D0;
-    color: white;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        height: 50vh;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .organize-btn {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+
+    .video-container {
+        height: 200px;
+    }
+
+    .how-it-works h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 40vh;
+    }
+
+    .button-group .button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
 }
