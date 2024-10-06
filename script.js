@@ -17,31 +17,44 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'index.html';
         });
     }
-});
 
-Example
+    // Event listener for form submission on create-event.html
+    const eventForm = document.querySelector('form');
+    if (eventForm) {
+        eventForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting (no backend yet)
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Assuming these values come from a backend or are generated on the frontend
-    const eventName = localStorage.getItem('eventName') || 'Sample Event'; // Placeholder logic
-    const passcode = Math.random().toString(36).substring(2, 8).toUpperCase(); // Generates a random passcode
-    const eventNumber = Math.floor(100000 + Math.random() * 900000); // Generates a random 6-digit number
+            // Simulate form data processing
+            const eventName = document.querySelector('#event-name').value;
+            localStorage.setItem('eventName', eventName); // Store event name in localStorage for later use
 
-    // Insert values into the placeholders
-    document.getElementById('event-name').innerText = eventName;
-    document.getElementById('passcode').value = passcode;
-    document.getElementById('event-number').value = eventNumber;
-});
+            alert('Event created successfully! Redirecting to confirmation...');
 
+            // Redirect to confirmation page
+            window.location.href = 'confirmation-event-creation.html';
+        });
+    }
 
-document.addEventListener('DOMContentLoaded', function () {
+    // On confirmation-event-creation.html, populate the Event Name, Passcode, and Event Number
+    const confirmationPage = document.querySelector('#event-name');
+    if (confirmationPage) {
+        const storedEventName = localStorage.getItem('eventName') || 'Sample Event'; // Get event name from storage or use a default value
+        const passcode = Math.random().toString(36).substring(2, 8).toUpperCase(); // Generate random passcode
+        const eventNumber = Math.floor(100000 + Math.random() * 900000); // Generate random 6-digit event number
+
+        // Populate the fields with dynamic data
+        document.getElementById('event-name').innerText = storedEventName;
+        document.getElementById('passcode').value = passcode;
+        document.getElementById('event-number').value = eventNumber;
+    }
+
     // Create Invite Link Button
     const inviteLinkButton = document.querySelector('.invite-link');
     if (inviteLinkButton) {
         inviteLinkButton.addEventListener('click', function () {
             // Placeholder logic for creating an invite link
             alert('Invite link created! Share this with participants.');
-            // You can replace this with actual logic to generate a link
+            // Actual invite link generation logic can go here
         });
     }
 
@@ -84,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Pricing Page Button
-    const pricingPageButton = document.querySelector('.pricing');
+    const pricingPageButton = document.querySelector('.pricing-page');
     if (pricingPageButton) {
         pricingPageButton.addEventListener('click', function () {
             window.location.href = 'pricing.html'; // Update with your pricing page URL
