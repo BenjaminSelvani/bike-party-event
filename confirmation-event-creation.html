@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Confirmation - MealMingle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <!-- Back button or navigation options (optional if needed) -->
+        
+        <!-- Main content -->
+        <div class="form-container">
+            <h1>MealMingle</h1>
+
+            <!-- Confirmation message -->
+            <div class="confirmation-message">
+                <p>Woho! Your event has been created! Now it’s time to invite your participants!</p>
+            </div>
+
+            <!-- Event Name Section -->
+            <div class="event-details">
+                <h2 id="event-name">Event Name Placeholder</h2> <!-- Placeholder for event name -->
+
+                <div class="important-details">
+                    <div class="detail-box">
+                        <p>This is your unique event PASSCODE to access this dashboard. Save it as you will need it later.</p>
+                        <input type="text" id="passcode" value="PASSCODE" readonly> <!-- Placeholder for passcode -->
+                    </div>
+
+                    <div class="detail-box">
+                        <p>This is your unique event NUMBER, in case you lose your code, this will be needed for support.</p>
+                        <input type="text" id="event-number" value="EVENT NUMBER" readonly> <!-- Placeholder for event number -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invite Participants Section -->
+            <div class="invite-participants">
+                <h3>Invite your participants here</h3>
+                <p>
+                    Remember to decide on a deadline for registrants.<br>
+                    Once you created the schedule, it is not possible to invite more people.<br>
+                    The invite will contain an Event Access Code to register.
+                </p>
+                
+                <div class="invite-buttons">
+                    <button class="invite-link">Create your invite link</button>
+                    <button class="invite-whatsapp">Invite via WhatsApp</button>
+                    <button class="invite-email">Invite via Email</button>
+                </div>
+            </div>
+
+            <!-- Admin Options Section -->
+            <div class="admin-options">
+                <button class="admin-dashboard">See Admin Dashboard</button>
+                <button class="upgrade-event">Upgrade your event</button>
+                <button class="pricing-page">Pricing</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

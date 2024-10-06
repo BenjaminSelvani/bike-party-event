@@ -313,3 +313,198 @@ body {
         padding: 12px;
     }
 }
+
+/* General styles */ event confirmation page
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F7F7F7;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Confirmation Page Container */
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #FFFFFF;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.form-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Confirmation Message */
+.confirmation-message p {
+    font-size: 1.3rem;
+    background-color: #5EBE4F;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Event Details */
+.event-details {
+    margin-top: 20px;
+}
+
+.event-details h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.important-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.detail-box {
+    width: 45%;
+    background-color: #FFE6E6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail-box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.detail-box input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Invite Participants Section */
+.invite-participants {
+    background-color: #FFF9EF;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.invite-participants h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.invite-participants p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.invite-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.invite-buttons button {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.invite-link {
+    background-color: #6C63FF;
+}
+
+.invite-whatsapp {
+    background-color: #25D366;
+}
+
+.invite-email {
+    background-color: #F7B538;
+}
+
+.invite-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* Admin Options Section */
+.admin-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-options button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.admin-dashboard {
+    background-color: #0066FF;
+}
+
+.upgrade-event {
+    background-color: #3D3D91;
+}
+
+.pricing-page {
+    background-color: #28A745;
+}
+
+.admin-options button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .detail-box {
+        width: 100%;
+    }
+
+    .invite-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
