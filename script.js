@@ -177,3 +177,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Pricing Page Button
+    const pricingPageButton = document.querySelector('.pricing-page');
+    if (pricingPageButton) {
+        pricingPageButton.addEventListener('click', function() {
+            window.location.href = 'pricing.html'; // Ensure this link is correct for the pricing page
+        });
+    }
+
+    // Additional buttons or interactions specific to the pricing page
+    const extraButtons = document.querySelectorAll('.extra-buttons button');
+    extraButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            alert('Button clicked: ' + this.innerText);
+        });
+    });
+});
