@@ -1,4 +1,77 @@
 // Event listener for redirecting to the event creation page
+
+// Event listener for redirecting to the event creation page
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "Organise my Dinner Party" button (on index.html)
+    const organizeBtn = document.querySelector('.organize-btn');
+    if (organizeBtn) {
+        // Redirect to create-event.html when clicked
+        organizeBtn.addEventListener('click', function() {
+            window.location.href = 'create-event.html';
+        });
+    }
+
+    // Get the "Back to Home" button (on create-event.html)
+    const backBtn = document.querySelector('.back-button');
+    if (backBtn) {
+        // Redirect to index.html when clicked
+        backBtn.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    }
+});
+document.addEventListener('scroll', function() {
+    const heroSection = document.querySelector('.hero-section');
+    const content = document.querySelector('.content');
+
+    // Get scroll position
+    let scrollPos = window.scrollY;
+
+    // Fade out the hero text when scrolling down
+    if (scrollPos > 150) {
+        heroSection.style.opacity = 0;
+        heroSection.style.transform = 'translateY(-20px)';
+    } else {
+        heroSection.style.opacity = 1;
+        heroSection.style.transform = 'translateY(0)';
+    }
+
+    // Reveal the content section
+    if (scrollPos > window.innerHeight / 2) {
+        content.classList.remove('hidden');
+        content.style.opacity = 1;
+        content.style.transform = 'translateY(0)';
+    } else {
+        content.style.opacity = 0;
+        content.style.transform = 'translateY(20px)';
+    }
+});
+document.addEventListener('scroll', function() {
+    const heroSection = document.querySelector('.hero-section');
+    const content = document.querySelector('.content');
+
+    // Get scroll position
+    let scrollPos = window.scrollY;
+
+    // Fade out the hero text when scrolling down
+    if (scrollPos > 150) {
+        heroSection.style.opacity = 0;
+        heroSection.style.transform = 'translateY(-20px)';
+    } else {
+        heroSection.style.opacity = 1;
+        heroSection.style.transform = 'translateY(0)';
+    }
+
+    // Reveal the content section
+    if (scrollPos > window.innerHeight / 2) {
+        content.classList.add('hidden');
+    } else {
+        content.classList.remove('hidden');
+    }
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Get the "Organise my Dinner Party" button (on index.html)
     const organizeBtn = document.querySelector('.organize-btn');
