@@ -3,85 +3,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Using a modern and clean font */
 }
 
 body {
     background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+h1, h2, h3, p {
+    margin: 10px 0;
 }
 
-/* Header Section with background image */
+/* Header Section */
 .header {
     width: 100%;
     height: 60vh;
-    background: url('https://static.vecteezy.com/system/resources/previews/011/641/943/original/orange-abstract-background-modern-orange-background-used-for-business-corporate-institution-poster-template-party-festive-seminar-orange-dynamic-gradient-background-vector.jpg') no-repeat center center/cover;
-    position: relative;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/010/379/273/small_2x/modern-colorful-geometric-abstract-background-triangle-shapes-with-futuristic-overlay-effect-graphic-design-illustration-free-vector.jpg') no-repeat center center/cover;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    color: #fff;
 }
 
-.menu-button {
-    margin: 20px;
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .menu-button button {
     padding: 10px 20px;
     background-color: #fff;
     color: #333;
-    border: 2px solid #ff9900;
-    border-radius: 5px;
+    border: none;
+    border-radius: 30px;
     cursor: pointer;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu-button button:hover {
-    background-color: #ff9900;
+    background-color: #ff6600;
     color: white;
 }
 
 /* Organize Button */
 .organize-btn {
-    margin-top: -30px;
     padding: 15px 40px;
-    background-color: #ff6600;
+    background: linear-gradient(135deg, #ff6600, #ff9900);
     color: white;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    margin-top: -30px;
 }
 
 .organize-btn:hover {
-    background-color: #e65c00;
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #e65c00, #ff7700);
 }
 
 /* Content Section */
 .content {
     width: 90%;
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
-/* How it works section */
 .how-it-works {
     text-align: center;
     margin-top: 40px;
@@ -118,11 +123,13 @@ body {
     color: #e65c00;
 }
 
-/* Button group for join, pricing, etc. */
+/* Button Group */
 .button-group {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .button-group .button {
@@ -133,13 +140,78 @@ body {
     cursor: pointer;
     color: white;
     font-size: 1.2rem;
-    width: 100%;
-    max-width: 300px;
     transition: background-color 0.3s ease;
 }
 
 .button-group .button:hover {
     background-color: #e65c00;
+}
+
+/* Form Page Styles */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #28a745, #28a745);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-3px);
+}
+
+/* Confirmation Page Styles */
+.confirmation-message {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* Responsive styles */
@@ -164,6 +236,10 @@ body {
     .how-it-works h2 {
         font-size: 1.5rem;
     }
+
+    .button-group .button {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -172,339 +248,7 @@ body {
     }
 
     .button-group .button {
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
-}
-
-
-/* General styles */ create-event
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f9f9f9;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Create Event Page Container */
-.create-event-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-/* Header Back Button */
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-}
-
-.back-button {
-    background-color: #eee;
-    border: 2px solid #ccc;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    color: #333;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: #ccc;
-}
-
-/* Form Container */
-.form-container {
-    background-color: #fff;
-    padding: 30px;
-    width: 100%;
-    max-width: 700px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: left;
-}
-
-/* Title */
-.form-container h1 {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Labels */
-.form-container label {
-    display: block;
-    font-size: 1.1rem;
-    margin: 15px 0 5px;
-    color: #444;
-}
-
-/* Input fields */
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container input[type="date"],
-.form-container input[type="time"],
-.form-container input[type="file"],
-.form-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-/* Focus styles for inputs */
-.form-container input:focus,
-.form-container textarea:focus {
-    border-color: #ff9900;
-    outline: none;
-}
-
-/* Textarea for event description */
-.form-container textarea {
-    resize: vertical;
-}
-
-/* Submit Button */
-.submit-button {
-    width: 100%;
-    padding: 15px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-    background-color: #218838;
-}
-
-/* Responsive styling for smaller screens */
-@media (max-width: 768px) {
-    .form-container {
-        padding: 20px;
-        width: 90%;
-    }
-
-    .form-container h1 {
-        font-size: 2rem;
-    }
-
-    .submit-button {
-        font-size: 1rem;
-        padding: 12px;
-    }
-}
-
-/* General styles */ event confirmation page
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #F7F7F7;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Confirmation Page Container */
-.confirmation-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    background-color: #F7F7F7;
-}
-
-/* Form Container */
-.form-container {
-    background-color: #FFFFFF;
-    padding: 40px;
-    width: 100%;
-    max-width: 800px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Title */
-.form-container h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Confirmation Message */
-.confirmation-message p {
-    font-size: 1.3rem;
-    background-color: #5EBE4F;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Event Details */
-.event-details {
-    margin-top: 20px;
-}
-
-.event-details h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.important-details {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.detail-box {
-    width: 45%;
-    background-color: #FFE6E6;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.detail-box p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.detail-box input {
-    width: 80%;
-    padding: 10px;
-    font-size: 1.2rem;
-    text-align: center;
-    border: none;
-    background-color: #F7F7F7;
-    border-radius: 10px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Invite Participants Section */
-.invite-participants {
-    background-color: #FFF9EF;
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.invite-participants h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.invite-participants p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.invite-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.invite-buttons button {
-    width: 30%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.invite-link {
-    background-color: #6C63FF;
-}
-
-.invite-whatsapp {
-    background-color: #25D366;
-}
-
-.invite-email {
-    background-color: #F7B538;
-}
-
-.invite-buttons button:hover {
-    opacity: 0.9;
-}
-
-/* Admin Options Section */
-.admin-options {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.admin-options button {
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: white;
-}
-
-.admin-dashboard {
-    background-color: #0066FF;
-}
-
-.upgrade-event {
-    background-color: #3D3D91;
-}
-
-.pricing-page {
-    background-color: #28A745;
-}
-
-.admin-options button:hover {
-    opacity: 0.9;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .detail-box {
-        width: 100%;
-    }
-
-    .invite-buttons button {
-        width: 100%;
-        margin-bottom: 10px;
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }
