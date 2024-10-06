@@ -1,3 +1,2 @@
-function navigateTo(page) {
-    alert("Navigating to " + page);
-}
+// Placeholder script for future functionality
+console.log("Meal Mingle scripts loaded.");

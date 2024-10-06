@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Dinner Party - MealMingle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="create-event-container">
+        <!-- Back to Home Button -->
+        <button onclick="navigateTo('index')" class="back-btn">Back to Home</button>
+        <h1>MealMingle</h1>
+
+        <!-- Form for Creating a Dinner Party -->
+        <form>
+            <!-- Email -->
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Event Name -->
+            <label for="event-name">Give your event a name:</label>
+            <input type="text" id="event-name" name="event-name" placeholder="Event Name" required>
+
+            <!-- Event Description -->
+            <label for="event-description">Describe your event:</label>
+            <textarea id="event-description" name="event-description" placeholder="Describe your event"></textarea>
+
+            <!-- Upload Image -->
+            <label for="upload-image">Give it some visuals:</label>
+            <input type="file" id="upload-image" name="upload-image" accept="image/*">
+
+            <!-- Event Date -->
+            <label for="event-date">When is the event happening?</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <!-- Time Slots -->
+            <label for="first-stop">When should the first stop be?</label>
+            <input type="time" id="first-stop" name="first-stop" required>
+
+            <label for="second-stop">When should the second stop be?</label>
+            <input type="time" id="second-stop" name="second-stop" required>
+
+            <label for="third-stop">When should the third stop be?</label>
+            <input type="time" id="third-stop" name="third-stop" required>
+
+            <!-- Optional Meetup Location & Time -->
+            <label for="meetup-location">Optional meetup location:</label>
+            <input type="text" id="meetup-location" name="meetup-location" placeholder="Location Address">
+
+            <label for="meetup-time">Optional meetup location time:</label>
+            <input type="time" id="meetup-time" name="meetup-time">
+
+            <!-- Submit Button -->
+            <button type="submit" class="create-event-btn">Create my Event</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,20 +1,195 @@
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
 }
 
-button {
+/* Container for the entire layout */
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section with Image and Menu Button */
+.hero {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     padding: 10px 20px;
-    margin: 10px;
-    background-color: #28a745;
+    background-color: #88C0D0;
     color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #5E81AC;
+}
+
+/* CTA Section (Organise Dinner Party) */
+.cta-section {
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #D08770;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
+.cta-btn:hover {
+    background-color: #B3583E;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #8FBCBB;
+}
+
+/* How it Works section */
+.how-it-works {
+    flex-basis: 45%;
+    background-color: #4C566A;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.how-it-works h2 {
+    margin-bottom: 20px;
+}
+
+.video-placeholder {
+    background-color: #ECEFF4;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    background-color: #FFCC00;
+    border: none;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Links Section */
+.links-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-btn {
+    background-color: #ECEFF4;
+    color: #2E3440;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    background-color: #D8DEE9;
+}
+
+
+/* Create Event Page Styles */
+.create-event-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fdf7f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+.create-event-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.create-event-btn:hover {
     background-color: #218838;
+}
+
+/* Back to Home Button */
+.back-btn {
+    background-color: #88C0D0;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
 }

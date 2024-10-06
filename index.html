@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Mingle</title>
+    <title>Social Dinner Party</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Meal Mingle</h1>
-    <button onclick="navigateTo(\"login\")">Login</button>
-    <button onclick="navigateTo(\"register\")">Register</button>
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Hero Section with Image and Menu -->
+        <div class="hero">
+            <img src="hero-image.jpg" alt="Social Dinner Party" class="hero-image">
+            <button class="menu-btn">Menu</button>
+        </div>
+
+        <!-- Organize Dinner Party Button -->
+        <div class="cta-section">
+            <button class="cta-btn">Organise my Dinner Party</button>
+        </div>
+
+
+
+        <button onclick="navigateTo('create-event')" class="cta-btn">Organise my Dinner Party</button>
+
+
+
+        <!-- Information Section -->
+        <div class="info-section">
+            <div class="how-it-works">
+                <h2>How does it work?</h2>
+                <div class="video-placeholder">
+                    <button class="play-btn">&#9654;</button>
+                </div>
+            </div>
+            
+            <div class="links-section">
+                <button class="link-btn">Join Existing Party</button>
+                <button class="link-btn">Pricing</button>
+                <button class="link-btn">FAQ</button>
+                <button class="link-btn">Admin Dashboard</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
